@@ -14,5 +14,5 @@ spec:
         name: kuma-mesh
         namespace: kuma-mesh-system
       interval: 1m
-    values:
-      replicaCount: 1
+      values:
+        
