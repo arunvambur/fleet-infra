@@ -1,0 +1,15 @@
+apiVersion: 'kuma.io/v1alpha1'
+kind: Dataplane
+mesh: demo-mesh
+metadata:
+  name: dp-echo-1
+  annotations:
+    kuma.io/sidecar-injection: enabled
+    kuma.io/mesh: demo-mesh
+networking:
+  address: 10.0.0.1
+  inbound:
+  - port: 10000
+    servicePort: 9000
+    tags:
+      kuma.io/service: echo
