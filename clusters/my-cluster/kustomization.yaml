@@ -4,4 +4,4 @@ resources:
 - apps/podinfo/
 - apps/fleet-api/
 - kuma-system
-- apps/kuma-dmo
+- apps/kuma-demo
