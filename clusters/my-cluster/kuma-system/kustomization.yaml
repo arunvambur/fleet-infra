@@ -4,4 +4,3 @@ resources:
 - kuma-system-source.yaml
 - kuma-system-release.yaml
 - namespace.yaml
-- demo-mesh.yaml
