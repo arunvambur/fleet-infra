@@ -1,5 +1,4 @@
 apiVersion: kuma.io/v1alpha1
 kind: Mesh
-metadata: 
+metadata:
   name: demo-mesh
-spec: 
