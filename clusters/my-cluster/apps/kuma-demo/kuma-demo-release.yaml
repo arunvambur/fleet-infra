@@ -5,7 +5,7 @@ metadata:
   labels:
     kuma.io/sidecar-injection: enabled
   annotations:
-    kuma.io/mesh: default
+    kuma.io/mesh: demo-mesh
 ---
 apiVersion: apps/v1
 kind: Deployment
