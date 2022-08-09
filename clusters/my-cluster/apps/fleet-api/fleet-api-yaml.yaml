@@ -4,6 +4,8 @@ metadata:
   name: fleet-api-demo
   labels:
     kuma.io/sidecar-injection: enabled
+  annotations:
+    kuma.io/mesh: demo-mesh
 ---
 apiVersion: apps/v1
 kind: Deployment

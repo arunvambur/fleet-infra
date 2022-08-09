@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: kuma-demo
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        kuma.io/sidecar-injection: enabled
+      annotations:
+        kuma.io/mesh: demo-mesh
+        kuma.io/container-patches: sc-container-patch
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app
+  namespace: kuma-demo
+spec:
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        kuma.io/sidecar-injection: enabled
+      annotations:
+        kuma.io/mesh: demo-mesh
+        kuma.io/container-patches: sc-container-patch
