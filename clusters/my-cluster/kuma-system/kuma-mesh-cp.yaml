@@ -15,4 +15,4 @@ spec:
       namespace: kuma-system
   sourceRef:
     kind: GitRepository
-    name: flux-bu
+    name: flux-system
