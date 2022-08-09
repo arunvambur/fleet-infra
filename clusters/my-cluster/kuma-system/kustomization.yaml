@@ -4,3 +4,5 @@ resources:
 - kuma-system-source.yaml
 - kuma-system-release.yaml
 - namespace.yaml
+- kuma-mesh-cp.yaml
+- kuma-mesh-mesh-resource.yaml

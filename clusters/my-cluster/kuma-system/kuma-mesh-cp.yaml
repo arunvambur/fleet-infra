@@ -1,18 +1,18 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
- name: kuma-mesh-cp
- namespace: flux-system
+  name: kuma-mesh-cp
+  namespace: flux-system
 spec:
- path: ./kuma-system
- interval: 10m
- retryInterval: 1m
- prune: true
- healthChecks:
-   - apiVersion: apps/v1
-     kind: Deployment
-     name: kuma-control-plane
-     namespace: kuma-system
- sourceRef:
-   kind: GitRepository
-   name: flux-bu
+  path: ./kuma-system
+  interval: 10m
+  retryInterval: 1m
+  prune: true
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: kuma-control-plane
+      namespace: kuma-system
+  sourceRef:
+    kind: GitRepository
+    name: flux-bu
