@@ -6,4 +6,4 @@ resources:
 - namespace.yaml
 - kuma-mesh-cp.yaml
 - kuma-mesh-mesh-resource.yaml
-- fleet-api-kustomization.yaml
+- ../apps-cluster
