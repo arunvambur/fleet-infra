@@ -4,7 +4,7 @@ metadata:
   name: kuma-mesh-mesh-resource
   namespace: flux-system
 spec:
-  path: ./apps/kuma-mesh-policies
+  path: ./clusters/my-cluster/apps/kuma-mesh-policies
   interval: 10m
   retryInterval: 1m
   prune: true
