@@ -4,4 +4,4 @@ resources:
 - apps/podinfo/
 - kuma-system
 - apps/kuma-demo
-- app-cluster
+
