@@ -14,8 +14,3 @@ spec:
         name: kuma
         namespace: flux-system
       interval: 1m
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: kuma-control-plane
-      namespace: kuma-system
